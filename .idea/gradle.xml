@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/gatling-load-test" />
+        <option name="gradleJvm" value="openjdk-16" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/gatling-load-test" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/webflux-poc" />
+        <option name="gradleJvm" value="openjdk-16" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/webflux-poc" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/webflux-poc-block" />
+        <option name="gradleJvm" value="openjdk-16" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/webflux-poc-block" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/webflux-validation-api-poc" />
+        <option name="gradleJvm" value="openjdk-16" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/webflux-validation-api-poc" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

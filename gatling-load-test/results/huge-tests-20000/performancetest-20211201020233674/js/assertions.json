@@ -1,0 +1,10 @@
+{
+  "simulation": "reactor.PerformanceTest",
+  "simulationId": "performancetest",
+  "start": 1638324153674,
+  "description": "",
+  "scenarios": ["CREATE PERSON"],
+  "assertions": [
+
+  ]
+}
