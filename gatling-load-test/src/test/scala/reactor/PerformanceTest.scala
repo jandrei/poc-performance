@@ -50,7 +50,7 @@ class PerformanceTest extends Simulation {
 
   // start with 10 users per second and ramp it up to 500 over 60 seconds
   setUp(scn.inject(
-    rampUsers(15000).during(1.minutes)
+    rampUsers(3000).during(1.minutes)
   ).protocols(httpConf))
 
 }

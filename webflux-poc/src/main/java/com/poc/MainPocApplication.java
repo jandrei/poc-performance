@@ -13,12 +13,4 @@ public class MainPocApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(MainPocApplication.class, args);
 	}
-
-	@PostConstruct
-	public void init() {
-		//System.setProperty("reactor.netty.ioWorkerCount", "2");
-
-		log.info("CPU: {}", Runtime.getRuntime().availableProcessors());
-	}
-
 }

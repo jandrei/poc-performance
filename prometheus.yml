@@ -1,0 +1,12 @@
+global:
+  scrape_interval:     5s
+scrape_configs:
+  - job_name: 'prometheus'
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['localhost:9090']
+  - job_name: 'spring-actuator'
+    metrics_path: '/actuator/prometheus'
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['192.168.0.108:8080', '192.168.0.108:8082']

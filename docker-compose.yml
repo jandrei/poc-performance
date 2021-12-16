@@ -1,0 +1,53 @@
+version: "3.4"
+services:
+  webflux-validation:
+    image: "webflux-validation-api-poc:latest"
+    ports:
+      - "8181:8181"
+    expose:
+      - "8181"
+    networks:
+      - api-network
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 500M
+        reservations:
+          cpus: '0.25'
+          memory: 300M
+  webflux-poc:
+    image: "webflux-poc:latest"
+    ports:
+      - "8080:8080"
+    expose:
+      - "8080"
+    networks:
+      - api-network
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 500M
+        reservations:
+          cpus: '0.25'
+          memory: 300M
+  webflux-poc-block:
+    image: "webflux-poc-block:latest"
+    ports:
+      - "8082:8082"
+    expose:
+      - "8082"
+    networks:
+      - api-network
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 500M
+        reservations:
+          cpus: '0.25'
+          memory: 300M
+networks:
+  api-network:
+    driver: bridge
