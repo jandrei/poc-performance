@@ -17,6 +17,8 @@ class PerformanceTest extends Simulation {
   var port = "8080";
   var uri = "/person"
   var title = "FULL REACTIVE"
+  val requests = 28800
+  val minutes = 1
 
   if (test == "block") {
     port = "8082"
@@ -49,8 +51,9 @@ class PerformanceTest extends Simulation {
     )
 
   // start with 10 users per second and ramp it up to 500 over 60 seconds
+
   setUp(scn.inject(
-    rampUsers(3000).during(1.minutes)
+    rampUsers(requests).during(minutes.minutes)
   ).protocols(httpConf))
 
 }
