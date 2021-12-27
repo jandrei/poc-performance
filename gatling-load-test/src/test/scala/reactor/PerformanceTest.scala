@@ -12,12 +12,12 @@ import scala.language.postfixOps
 class PerformanceTest extends Simulation {
 
   //reactive/block/reactive-block
-  val test = "reactive"
+  val test = "block"
 
   var port = "8080";
   var uri = "/person"
   var title = "FULL REACTIVE"
-  val requests = 28800
+  val requests = 71530
   val minutes = 1
 
   if (test == "block") {
@@ -30,7 +30,7 @@ class PerformanceTest extends Simulation {
   }
 
   val httpConf = http
-    .baseUrl(s"http://localhost:${port}") // Here is the root for all relative URLs
+    .baseUrl(s"http://192.168.0.108:${port}") // Here is the root for all relative URLs
 
   def randomAge() = util.Random.nextInt(98)
 
