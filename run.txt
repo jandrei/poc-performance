@@ -11,7 +11,12 @@ docker network create api-network
 
 
 docker pull prom/prometheus
-
 docker run -d -p 9090:9090 -v /home/jandrei/workspaces/poc-performance/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus
-
 docker run -d -p 3000:3000 grafana/grafana
+
+
+
+docker run -d -p 9000:9000 --privileged -v /var/run/docker.sock:/var/run/docker.sock uifd/ui-for-docker
+
+
+
